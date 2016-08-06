@@ -15,6 +15,6 @@ x.click()
 time.sleep(5)
 driver.quit()
 
-#lol
+
 
 # link = driver.find_element_by_link_text("Export")click()
