@@ -1,20 +1,11 @@
 import requests
 import Player_batting as Bat
-import itertools
-import html5lib
 import re
-import pymysql
-from functools import partial
 from pathos.multiprocessing import Pool  # This is a thread-based Pool
-from multiprocessing import cpu_count
 from bs4 import BeautifulSoup
 import time
-import csv
-import ast
 import mlb_site_dictionary as dic
 import mlb_db_queries as quer
-import os
-import ipdb
 
 PLAYER_SITE_LINK_KEY = ('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z')
 
@@ -63,20 +54,19 @@ def scrape_bat(player):
     import mlb_site_dictionary as dic
     link = dic.link_dictionary['player_batting'].format(player[1][0], player[1])
     html = str(BeautifulSoup(requests.get(link).content, 'html5lib').body)
-    time.sleep(2)
+    time.sleep(3)
     print(player[1] + ' Has been Scanned')
     return player[0], player[1], html, link
 
 start_time = time.time()
 
 # Gets All Active Players
-# player_record = scrape_player(dic.link_dictionary['player_id'] , PLAYER_SITE_LINK_KEY)
+player_record = scrape_player(dic.link_dictionary['player_id'] , PLAYER_SITE_LINK_KEY)
 
 # Inserts Players into database
-# quer.execute_query(quer.insert_queries['player_id'], records=player_record, is_insert=True)
+quer.execute_query(quer.insert_queries['player_id'], records=player_record, is_insert=True)
 
 # Queries for players for table scraping
-query = "SELECT id, player_alias from player limit 2;"
 players = quer.execute_query(query, results=True)
 
 # Multi-Processing for scraping batting tables
@@ -105,12 +95,4 @@ for player in Bat.Player_batting.instances:
     except AttributeError:
         pass
 
-
-#TODO insert player batting into database
-
-
-
-
 print("--- %s seconds ---" % (time.time() - start_time))
-
-

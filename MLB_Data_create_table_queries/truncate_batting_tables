@@ -1,0 +1,10 @@
+TRUNCATE TABLE batting_advanced;
+TRUNCATE TABLE batting_baserunning;
+TRUNCATE TABLE batting_cumulative;
+TRUNCATE TABLE batting_pitches;
+TRUNCATE TABLE batting_post_season;
+TRUNCATE TABLE batting_ratio;
+TRUNCATE TABLE batting_situational;
+TRUNCATE TABLE batting_standard;
+TRUNCATE TABLE batting_value;
+TRUNCATE TABLE batting_win_prob;

@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import mlb_db_queries as quer
-import pprint as pp
+
+
 class Player_batting(object):
     instances = []
 
