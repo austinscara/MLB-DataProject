@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 import time
 import mlb_site_dictionary as dic
 import mlb_db_queries as quer
+import ipdb
 
 PLAYER_SITE_LINK_KEY = ('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z')
 
@@ -65,7 +66,7 @@ player_record = scrape_player(dic.link_dictionary['player_id'] , PLAYER_SITE_LIN
 
 # Inserts Players into database
 quer.execute_query(quer.insert_queries['player_id'], records=player_record, is_insert=True)
-
+# ipdb.set_trace()
 # Queries for players for table scraping
 query = "SELECT id, player_alias from player;"
 players = quer.execute_query(query, results=True)
