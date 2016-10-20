@@ -67,6 +67,7 @@ player_record = scrape_player(dic.link_dictionary['player_id'] , PLAYER_SITE_LIN
 quer.execute_query(quer.insert_queries['player_id'], records=player_record, is_insert=True)
 
 # Queries for players for table scraping
+query = "SELECT id, player_alias from player;"
 players = quer.execute_query(query, results=True)
 
 # Multi-Processing for scraping batting tables
