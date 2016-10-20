@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import mlb_db_queries as quer
+import pickle
 
 
 class Player_batting(object):
@@ -23,6 +24,8 @@ class Player_batting(object):
         self.batting_pitches = None
         self.cumulative_batting = None
 
+    def unpickle(self,data):
+        return
     # Creates all Tables
     def parse_tables(self):
         self.batting_standard = {'batting_standard': self.clean_batting_standard(self.capture_player_batting_standard())}

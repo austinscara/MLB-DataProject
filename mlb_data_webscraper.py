@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 import time
 import mlb_site_dictionary as dic
 import mlb_db_queries as quer
+import pickle
 import ipdb
 
 PLAYER_SITE_LINK_KEY = ('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z')
@@ -59,6 +60,9 @@ def scrape_bat(player):
     print(player[1] + ' Has been Scanned')
     return player[0], player[1], html, link
 
+def pickles(lg_data):
+    return pickle.dumps(lg_data)
+
 start_time = time.time()
 
 # Gets All Active Players
@@ -77,7 +81,7 @@ batting_html = pool.map(scrape_bat, players)
 
 # Creats player_batting objects
 for player in batting_html:
-    Bat.Player_batting(player[0],player[1],player[2], player[3])
+    Bat.Player_batting(player[0],player[1],pickles(player[2]), player[3])
 
 # Builds out player batting tables and loads them into database
 for player in Bat.Player_batting.instances:
