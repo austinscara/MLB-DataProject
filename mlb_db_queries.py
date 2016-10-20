@@ -1,20 +1,5 @@
-import ipdb
-
 insert_queries = {'player_id': 'INSERT IGNORE INTO player VALUES (id, %s,%s,%s,%s);'
-                 ,'team_id': """UPDATE temp
-                                LEFT JOIN team on  temp.team_code = team.team_code
-                                SET temp.is_update = CASE WHEN (temp.team_link = team.team_link 
-                                                           AND temp.team_code = team.team_code 
-                                                           AND temp.team_name = team.team_name 
-                                                           AND temp.team_league = team.team_league) THEN 0 ELSE  1
-                                                           END;
-
-                            INSERT INTO team (team_link, team_code, team_name, team_league) 
-                            SELECT  temp.team_link, temp.team_code, temp.team_name, temp.team_league
-                            FROM temp
-                            ON DUPLICATE KEY UPDATE team.team_league = CASE WHEN team.team_league = temp.team_league THEN  team.team_league ELSE temp.team_league END
-                            ; """
-
+                  ,'batting_tables': 'INSERT INTO {} VALUES ()'
                   }
 
 
