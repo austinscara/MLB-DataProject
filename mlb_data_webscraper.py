@@ -6,8 +6,7 @@ from bs4 import BeautifulSoup
 import time
 import mlb_site_dictionary as dic
 import mlb_db_queries as quer
-import pickle
-import ipdb
+
 
 PLAYER_SITE_LINK_KEY = ('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z')
 
@@ -56,49 +55,89 @@ def scrape_bat(player):
     import mlb_site_dictionary as dic
     link = dic.link_dictionary['player_batting'].format(player[1][0], player[1])
     html = str(BeautifulSoup(requests.get(link).content, 'html5lib').body)
-    time.sleep(3)
+    time.sleep(4)
     print(player[1] + ' Has been Scanned')
     return player[0], player[1], html, link
 
-def pickles(lg_data):
-    return pickle.dumps(lg_data)
+def write_bat(batting_html):
+    # Creats player_batting objects
+    for player in batting_html:
+        player_instance = Bat.Player_batting(player[0], player[1], player[2], player[3])
+        print(player_instance.link)
+        player_instance.parse_html(player_instance.raw_html)
+        player_instance.parse_tables()
+        try:
+            player_instance.write_to_db(player_instance.batting_standard)
+        except:
+            print('error at test Batting Standard')
+            pass
+        try:
+            player_instance.write_to_db(player_instance.batting_value)
+        except:
+            print('error at test Batting Value')
+            pass
+        try:
+            player_instance.write_to_db(player_instance.batting_advanced)
+        except:
+            print('error at test Batting Advanced')
+            pass
+        try:
+            player_instance.write_to_db(player_instance.batting_postseason)
+        except:
+            print('error at test Batting Postseason')
+            pass
+        try:
+            player_instance.write_to_db(player_instance.batting_allstar)
+        except:
+            print('error at test Batting Allstar')
+            pass
+        try:
+            player_instance.write_to_db(player_instance.batting_ratio)
+        except:
+            print('error at test Batting Ratio')
+            pass
+        try:
+            player_instance.write_to_db(player_instance.batting_win_probability)
+        except:
+            print('error at test Batting win Probablility')
+            pass
+        try:
+            player_instance.write_to_db(player_instance.batting_baserunning)
+        except:
+            print('error at test Batting Baserunning')
+            pass
+        try:
+            player_instance.write_to_db(player_instance.batting_situational)
+        except:
+            print('error at test Batting Situational')
+            pass
+        try:
+            player_instance.write_to_db(player_instance.batting_pitches)
+        except:
+            print('error at test Batting Pitches')
+            pass
+        try:
+            player_instance.write_to_db(player_instance.cumulative_batting)
+        except:
+            print('error at test Cumulative Batting')
+            pass
+    return None
 
 start_time = time.time()
 
 # Gets All Active Players
-player_record = scrape_player(dic.link_dictionary['player_id'] , PLAYER_SITE_LINK_KEY)
+# player_record = scrape_player(dic.link_dictionary['player_id'] , PLAYER_SITE_LINK_KEY)
 
 # Inserts Players into database
-quer.execute_query(quer.insert_queries['player_id'], records=player_record, is_insert=True)
-# ipdb.set_trace()
+# quer.execute_query(quer.insert_queries['player_id'], records=player_record, is_insert=True)
+
 # Queries for players for table scraping
 query = "SELECT id, player_alias from player;"
 players = quer.execute_query(query, results=True)
 
 # Multi-Processing for scraping batting tables
-pool = Pool(6)
+pool = Pool(5)
 batting_html = pool.map(scrape_bat, players)
-
-# Creats player_batting objects
-for player in batting_html:
-    Bat.Player_batting(player[0],player[1],pickles(player[2]), player[3])
-
-# Builds out player batting tables and loads them into database
-for player in Bat.Player_batting.instances:
-    player.parse_tables()
-    try:
-        player.write_to_db(player.batting_standard)
-        player.write_to_db(player.batting_value)
-        player.write_to_db(player.batting_advanced)
-        player.write_to_db(player.batting_postseason)
-        player.write_to_db(player.batting_allstar)
-        player.write_to_db(player.batting_ratio)
-        player.write_to_db(player.batting_win_probability)
-        player.write_to_db(player.batting_baserunning)
-        player.write_to_db(player.batting_situational)
-        player.write_to_db(player.batting_pitches)
-        player.write_to_db(player.cumulative_batting)
-    except AttributeError:
-        pass
+write_bat(batting_html)
 
 print("--- %s seconds ---" % (time.time() - start_time))
