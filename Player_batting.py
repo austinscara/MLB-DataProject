@@ -13,7 +13,6 @@ class Player_batting(object):
         self.raw_html = raw_html
         self.html = None
         self.cumulative_html = None
-        Player_batting.instances.append(self)
         self.batting_standard = None
         self.batting_value = None
         self.batting_advanced = None
@@ -25,6 +24,7 @@ class Player_batting(object):
         self.batting_situational = None
         self.batting_pitches = None
         self.cumulative_batting = None
+        Player_batting.instances.append(self)
 
     def parse_html(self, data):
         #TODO make function that converts processed html to html
