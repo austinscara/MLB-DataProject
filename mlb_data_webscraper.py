@@ -122,22 +122,26 @@ def write_bat(batting_html):
             pass
     return None
 
-start_time = time.time()
+def main():
+    start_time = time.time()
 
-# Gets All Active Players
-# player_record = scrape_player(dic.link_dictionary['player_id'] , PLAYER_SITE_LINK_KEY)
+    # Gets All Active Players
+    # player_record = scrape_player(dic.link_dictionary['player_id'] , PLAYER_SITE_LINK_KEY)
 
-# Inserts Players into database
-# quer.execute_query(quer.insert_queries['player_id'], records=player_record, is_insert=True)
+    # Inserts Players into database
+    # quer.execute_query(quer.insert_queries['player_id'], records=player_record, is_insert=True)
 
-# Queries for players for table scraping
-query = "SELECT id, player_alias from player;"
-players = quer.execute_query(query, results=True)
+    # Queries for players for table scraping
+    query = "SELECT id, player_alias from player;"
+    players = quer.execute_query(query, results=True)
 
-# Multi-Processing for scraping batting tables
-pool = Pool(5)
-batting_html = pool.map(scrape_bat, players)
-print('scanning done')
-write_bat(batting_html)
+    # Multi-Processing for scraping batting tables
+    pool = Pool(5)
+    batting_html = pool.map(scrape_bat, players)
+    print('scanning done')
+    write_bat(batting_html)
 
-print("--- %s seconds ---" % (time.time() - start_time))
+    print("--- %s seconds ---" % (time.time() - start_time))
+
+if __name__ == "__main__":
+    main()
