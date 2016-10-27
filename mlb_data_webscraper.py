@@ -4,7 +4,6 @@ import re
 from pathos.multiprocessing import Pool  # This is a thread-based Pool
 from bs4 import BeautifulSoup
 import time
-import mlb_site_dictionary as dic
 import mlb_db_queries as quer
 
 
@@ -138,6 +137,7 @@ players = quer.execute_query(query, results=True)
 # Multi-Processing for scraping batting tables
 pool = Pool(5)
 batting_html = pool.map(scrape_bat, players)
+print('scanning done')
 write_bat(batting_html)
 
 print("--- %s seconds ---" % (time.time() - start_time))
