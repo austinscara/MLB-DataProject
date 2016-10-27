@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 import mlb_db_queries as quer
-import pickle
 
 
 class Player_batting(object):
