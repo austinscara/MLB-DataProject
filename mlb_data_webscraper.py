@@ -5,11 +5,7 @@ from pathos.multiprocessing import Pool  # This is a thread-based Pool
 from bs4 import BeautifulSoup
 import time
 import mlb_db_queries as quer
-<<<<<<< HEAD
 
-=======
-import ipdb
->>>>>>> parent of 3b4f8bb... added pickle
 
 PLAYER_SITE_LINK_KEY = ('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z')
 
@@ -62,7 +58,6 @@ def scrape_bat(player):
     print(player[1] + ' Has been Scanned')
     return player[0], player[1], html, link
 
-<<<<<<< HEAD
 def write_bat(batting_html):
     # Creats player_batting objects
     for player in batting_html:
@@ -127,8 +122,6 @@ def write_bat(batting_html):
             pass
     return None
 
-=======
->>>>>>> parent of 3b4f8bb... added pickle
 start_time = time.time()
 
 # Gets All Active Players
@@ -144,32 +137,7 @@ players = quer.execute_query(query, results=True)
 # Multi-Processing for scraping batting tables
 pool = Pool(5)
 batting_html = pool.map(scrape_bat, players)
-<<<<<<< HEAD
 print('scanning done')
 write_bat(batting_html)
-=======
-
-# Creats player_batting objects
-for player in batting_html:
-    Bat.Player_batting(player[0],player[1],player[2], player[3])
-
-# Builds out player batting tables and loads them into database
-for player in Bat.Player_batting.instances:
-    player.parse_tables()
-    try:
-        player.write_to_db(player.batting_standard)
-        player.write_to_db(player.batting_value)
-        player.write_to_db(player.batting_advanced)
-        player.write_to_db(player.batting_postseason)
-        player.write_to_db(player.batting_allstar)
-        player.write_to_db(player.batting_ratio)
-        player.write_to_db(player.batting_win_probability)
-        player.write_to_db(player.batting_baserunning)
-        player.write_to_db(player.batting_situational)
-        player.write_to_db(player.batting_pitches)
-        player.write_to_db(player.cumulative_batting)
-    except AttributeError:
-        pass
->>>>>>> parent of 3b4f8bb... added pickle
 
 print("--- %s seconds ---" % (time.time() - start_time))

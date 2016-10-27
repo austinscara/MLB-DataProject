@@ -2,7 +2,7 @@ use mlb_project1;
 
 CREATE TABLE `batting_standard` (
    `player_id` int(11) DEFAULT NULL,
-   `link` varchar(100) DEFAULT NULL,
+   `link` varchar(50) DEFAULT NULL,
    `Year` int(11) DEFAULT NULL,
    `Age` int(11) DEFAULT NULL,
    `Tm` varchar(10) DEFAULT NULL,
@@ -38,11 +38,11 @@ CREATE TABLE `batting_standard` (
 
 CREATE TABLE `batting_value` (
    `player_id` int(11) DEFAULT NULL,
-   `link` varchar(100) DEFAULT NULL,
+   `link` varchar(50) DEFAULT NULL,
    `Year` int(11) DEFAULT NULL,
    `Age` int(11) DEFAULT NULL,
-   `Tm` varchar(10) DEFAULT NULL,
-   `Lg` varchar(10) DEFAULT NULL,
+   `Tm` int(11) DEFAULT NULL,
+   `Lg` int(11) DEFAULT NULL,
    `G` int(11) DEFAULT NULL,
    `PA` int(11) DEFAULT NULL,
    `Rbat` int(11) DEFAULT NULL,
@@ -51,7 +51,7 @@ CREATE TABLE `batting_value` (
    `Rfield` int(11) DEFAULT NULL,
    `Rpos` int(11) DEFAULT NULL,
    `RAA` int(11) DEFAULT NULL,
-   `WAA` float(5,4) DEFAULT NULL,
+   `WAA` int(11) DEFAULT NULL,
    `Rrep` int(11) DEFAULT NULL,
    `RAR` int(11) DEFAULT NULL,
    `WAR` float(5,4) DEFAULT NULL,
@@ -67,16 +67,16 @@ CREATE TABLE `batting_value` (
 
 CREATE TABLE `batting_advanced` (
    `player_id` int(11) DEFAULT NULL,
-   `link` varchar(100) DEFAULT NULL,
+   `link` varchar(50) DEFAULT NULL,
    `Year` int(11) DEFAULT NULL,
    `Age` int(11) DEFAULT NULL,
-   `Tm` varchar(10) DEFAULT NULL,
-   `Lg` varchar(10) DEFAULT NULL,
+   `Tm` int(11) DEFAULT NULL,
+   `Lg` int(11) DEFAULT NULL,
    `PA` int(11) DEFAULT NULL,
    `Outs` int(11) DEFAULT NULL,
    `RC` int(11) DEFAULT NULL,
    `RC/G` float(5,4) DEFAULT NULL,
-   `AIR` INT(11) DEFAULT NULL,
+   `AIR` float(5,4) DEFAULT NULL,
    `BAbip` float(5,4) DEFAULT NULL,
    `BA` float(5,4) DEFAULT NULL,
    `lgBA` float(5,4) DEFAULT NULL,
@@ -86,23 +86,23 @@ CREATE TABLE `batting_advanced` (
    `lgSLG` float(5,4) DEFAULT NULL,
    `OPS` float(5,4) DEFAULT NULL,
    `lgOPS` float(5,4) DEFAULT NULL,
-   `OPS+` int(11) DEFAULT NULL,
+   `OPS+` float(5,4) DEFAULT NULL,
    `OWn%` float(5,4) DEFAULT NULL,
-   `BtRuns` float(7,5) DEFAULT NULL,
-   `BtWins` float(7,5) DEFAULT NULL,
+   `BtRuns` float(5,4) DEFAULT NULL,
+   `BtWins` float(5,4) DEFAULT NULL,
    `TotA` float(5,4) DEFAULT NULL,
    `SecA` float(5,4) DEFAULT NULL,
    `ISO` float(5,4) DEFAULT NULL,
-   `PwrSpd` float(7,5) DEFAULT NULL
+   `PwrSpd` float(5,4) DEFAULT NULL
    );
 
 CREATE TABLE `batting_post_season` (
    `player_id` int(11) DEFAULT NULL,
-   `link` int(100) DEFAULT NULL,
+   `link` int(11) DEFAULT NULL,
    `Year` int(11) DEFAULT NULL,
    `Age` int(11) DEFAULT NULL,
-   `Tm` varchar(10) DEFAULT NULL,
-   `Lg` varchar(10) DEFAULT NULL,
+   `Tm` int(11) DEFAULT NULL,
+   `Lg` int(11) DEFAULT NULL,
    `Series` varchar(10) DEFAULT NULL,
    `Opp` varchar(10) DEFAULT NULL,
    `Rslt` varchar(10) DEFAULT NULL,
@@ -133,12 +133,12 @@ CREATE TABLE `batting_post_season` (
 
 CREATE TABLE `batting_ratio` (
    `player_id` int(11) DEFAULT NULL,
-   `link` varchar(100) DEFAULT NULL,
+   `link` varchar(50) DEFAULT NULL,
    `Year` int(11) DEFAULT NULL,
    `Age` int(11) DEFAULT NULL,
    `Tm` varchar(10) DEFAULT NULL,
    `Lg` varchar(10) DEFAULT NULL,
-   `PA` int(11) DEFAULT NULL,
+   `PA` float(5,4) DEFAULT NULL,
    `HR%` float(5,4) DEFAULT NULL,
    `SO%` float(5,4) DEFAULT NULL,
    `BB%` float(5,4) DEFAULT NULL,
@@ -158,7 +158,7 @@ CREATE TABLE `batting_ratio` (
 
 CREATE TABLE `batting_win_prob` (
    `player_id` int(11) DEFAULT NULL,
-   `link` varchar(100) DEFAULT NULL,
+   `link` varchar(50) DEFAULT NULL,
    `Year` int(11) DEFAULT NULL,
    `Age` int(11) DEFAULT NULL,
    `Tm` varchar(10) DEFAULT NULL,
@@ -182,7 +182,7 @@ CREATE TABLE `batting_win_prob` (
 
 CREATE TABLE `batting_baserunning` (
    `player_id` int(11) DEFAULT NULL,
-   `link` varchar(100) DEFAULT NULL,
+   `link` varchar(50) DEFAULT NULL,
    `Year` int(11) DEFAULT NULL,
    `Age` int(11) DEFAULT NULL,
    `Tm` varchar(10) DEFAULT NULL,
@@ -222,7 +222,7 @@ CREATE TABLE `batting_baserunning` (
 
 CREATE TABLE `batting_situational` (
    `id` int(11) DEFAULT NULL,
-   `link` varchar(100) DEFAULT NULL,
+   `link` varchar(50) DEFAULT NULL,
    `year_id` int(11) DEFAULT NULL,
    `age` int(11) DEFAULT NULL,
    `tm` varchar(10) DEFAULT NULL,
@@ -268,7 +268,7 @@ CREATE TABLE `batting_situational` (
 
 CREATE TABLE `batting_pitches` (
    `player_id` int(11) DEFAULT NULL,
-   `link` varchar(100) DEFAULT NULL,
+   `link` varchar(50) DEFAULT NULL,
    `Year` int(11) DEFAULT NULL,
    `Age` int(11) DEFAULT NULL,
    `Tm` varchar(10) DEFAULT NULL,
@@ -307,7 +307,7 @@ CREATE TABLE `batting_pitches` (
 
 CREATE TABLE `batting_cumulative` (
    `player_id` int(11) DEFAULT NULL,
-   `link` varchar(100) DEFAULT NULL,
+   `link` varchar(50) DEFAULT NULL,
    `Year` int(11) DEFAULT NULL,
    `Age` int(11) DEFAULT NULL,
    `G` int(11) DEFAULT NULL,

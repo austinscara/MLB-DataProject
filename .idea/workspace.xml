@@ -3,9 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="339de9fd-984a-40b9-bb6b-9aec8391d34d" name="Default" comment="Changed git ignore&#10;">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 =======
 >>>>>>> parent of 3b4f8bb... added pickle
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Player_batting.py" afterPath="$PROJECT_DIR$/Player_batting.py" />
+>>>>>>> parent of b08c8a9... Completed batting tables
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mlb_data_webscraper.py" afterPath="$PROJECT_DIR$/mlb_data_webscraper.py" />
     </list>
     <ignored path="MLB DataProject.iws" />
@@ -27,12 +32,17 @@
   </component>
   <component name="FileEditorManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <splitter split-orientation="horizontal" split-proportion="0.44731295">
+=======
+    <splitter split-orientation="horizontal" split-proportion="0.4178082">
+>>>>>>> parent of b08c8a9... Completed batting tables
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="mlb_data_webscraper.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/mlb_data_webscraper.py">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state relative-caret-position="655">
                   <caret line="133" column="46" selection-start-line="133" selection-start-column="46" selection-end-line="133" selection-end-column="46" />
                   <folding>
@@ -41,6 +51,15 @@
                     <element signature="e#1470#1588#0" expanded="false" />
                     <element signature="e#1619#1834#0" expanded="false" />
                     <element signature="e#2263#4478#0" expanded="false" />
+=======
+                <state relative-caret-position="306">
+                  <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+                  <folding>
+                    <element signature="e#0#15#0" expanded="true" />
+                    <element signature="e#435#1487#0" expanded="false" />
+                    <element signature="e#1529#1647#0" expanded="false" />
+                    <element signature="e#1678#1893#0" expanded="false" />
+>>>>>>> parent of b08c8a9... Completed batting tables
                   </folding>
                 </state>
               </provider>
@@ -49,7 +68,7 @@
           <file leaf-file-name="mlb_db_queries.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/mlb_db_queries.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
+                <state relative-caret-position="51">
                   <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
                   <folding />
                 </state>
@@ -69,34 +88,38 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file leaf-file-name="Player_batting.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Player_batting.py">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state relative-caret-position="374">
                   <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+=======
+                <state relative-caret-position="154">
+                  <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+>>>>>>> parent of b08c8a9... Completed batting tables
                   <folding>
                     <element signature="e#0#29#0" expanded="true" />
-                    <element signature="e#2683#2850#0" expanded="false" />
-                    <element signature="e#2904#3069#0" expanded="false" />
-                    <element signature="e#3126#3294#0" expanded="false" />
-                    <element signature="e#3354#3524#0" expanded="false" />
-                    <element signature="e#3578#3743#0" expanded="false" />
-                    <element signature="e#3800#3975#0" expanded="false" />
-                    <element signature="e#4035#4206#0" expanded="false" />
-                    <element signature="e#4266#4437#0" expanded="false" />
-                    <element signature="e#4493#4660#0" expanded="false" />
-                    <element signature="e#4719#4997#0" expanded="false" />
-                    <element signature="e#5051#7585#0" expanded="false" />
-                    <element signature="e#7635#9572#0" expanded="false" />
-                    <element signature="e#9625#11553#0" expanded="false" />
-                    <element signature="e#11657#14237#0" expanded="false" />
-                    <element signature="e#14287#15726#0" expanded="false" />
-                    <element signature="e#15786#17114#0" expanded="false" />
-                    <element signature="e#17170#20323#0" expanded="false" />
-                    <element signature="e#20379#23988#0" expanded="false" />
-                    <element signature="e#24040#26716#0" expanded="false" />
-                    <element signature="e#26771#29148#0" expanded="false" />
+                    <element signature="e#2570#2735#0" expanded="false" />
+                    <element signature="e#2792#2960#0" expanded="false" />
+                    <element signature="e#3020#3190#0" expanded="false" />
+                    <element signature="e#3244#3409#0" expanded="false" />
+                    <element signature="e#3466#3641#0" expanded="false" />
+                    <element signature="e#3701#3872#0" expanded="false" />
+                    <element signature="e#3932#4103#0" expanded="false" />
+                    <element signature="e#4159#4326#0" expanded="false" />
+                    <element signature="e#4385#4555#0" expanded="false" />
+                    <element signature="e#4667#6402#0" expanded="false" />
+                    <element signature="e#6452#7866#0" expanded="false" />
+                    <element signature="e#7919#9489#0" expanded="false" />
+                    <element signature="e#9544#11286#0" expanded="false" />
+                    <element signature="e#11336#12558#0" expanded="false" />
+                    <element signature="e#12618#13779#0" expanded="false" />
+                    <element signature="e#13835#15856#0" expanded="false" />
+                    <element signature="e#15912#18273#0" expanded="false" />
+                    <element signature="e#18325#20260#0" expanded="false" />
+                    <element signature="e#20315#21855#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -165,8 +188,8 @@
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/site-packages/socks.py" />
         <option value="$PROJECT_DIR$/mlb_site_dictionary.py" />
         <option value="$PROJECT_DIR$/mlb_db_queries.py" />
-        <option value="$PROJECT_DIR$/Player_batting.py" />
         <option value="$PROJECT_DIR$/mlb_data_webscraper.py" />
+        <option value="$PROJECT_DIR$/Player_batting.py" />
       </list>
     </option>
   </component>
@@ -470,11 +493,18 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2737968" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31584582" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38751346" sideWeight="0.50641024" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251599" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272921" sideWeight="0.4947313" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32409382" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276414" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31163287" sideWeight="0.49358973" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31590182" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+>>>>>>> parent of b08c8a9... Completed batting tables
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -526,7 +556,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+<<<<<<< HEAD
       <option name="time" value="52" />
+=======
+      <option name="time" value="36" />
+>>>>>>> parent of b08c8a9... Completed batting tables
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -552,6 +586,7 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
             <element signature="e#376#1428#0" expanded="false" />
             <element signature="e#1470#1588#0" expanded="false" />
             <element signature="e#1619#1834#0" expanded="false" />
@@ -562,6 +597,11 @@
             <element signature="e#1664#1879#0" expanded="false" />
             <element signature="e#1909#2273#0" expanded="false" />
 >>>>>>> parent of 3b4f8bb... added pickle
+=======
+            <element signature="e#435#1487#0" expanded="false" />
+            <element signature="e#1529#1647#0" expanded="false" />
+            <element signature="e#1678#1893#0" expanded="false" />
+>>>>>>> parent of b08c8a9... Completed batting tables
           </folding>
         </state>
       </provider>
@@ -588,6 +628,7 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
             <element signature="e#376#1428#0" expanded="false" />
             <element signature="e#1470#1588#0" expanded="false" />
             <element signature="e#1619#1834#0" expanded="false" />
@@ -598,6 +639,11 @@
             <element signature="e#1664#1879#0" expanded="false" />
             <element signature="e#1909#2273#0" expanded="false" />
 >>>>>>> parent of 3b4f8bb... added pickle
+=======
+            <element signature="e#435#1487#0" expanded="false" />
+            <element signature="e#1529#1647#0" expanded="false" />
+            <element signature="e#1678#1893#0" expanded="false" />
+>>>>>>> parent of b08c8a9... Completed batting tables
           </folding>
         </state>
       </provider>
@@ -624,6 +670,7 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
             <element signature="e#376#1428#0" expanded="false" />
             <element signature="e#1470#1588#0" expanded="false" />
             <element signature="e#1619#1834#0" expanded="false" />
@@ -634,6 +681,11 @@
             <element signature="e#1664#1879#0" expanded="false" />
             <element signature="e#1909#2273#0" expanded="false" />
 >>>>>>> parent of 3b4f8bb... added pickle
+=======
+            <element signature="e#435#1487#0" expanded="false" />
+            <element signature="e#1529#1647#0" expanded="false" />
+            <element signature="e#1678#1893#0" expanded="false" />
+>>>>>>> parent of b08c8a9... Completed batting tables
           </folding>
         </state>
       </provider>
@@ -660,6 +712,7 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
             <element signature="e#376#1428#0" expanded="false" />
             <element signature="e#1470#1588#0" expanded="false" />
             <element signature="e#1619#1834#0" expanded="false" />
@@ -670,6 +723,11 @@
             <element signature="e#1664#1879#0" expanded="false" />
             <element signature="e#1909#2273#0" expanded="false" />
 >>>>>>> parent of 3b4f8bb... added pickle
+=======
+            <element signature="e#435#1487#0" expanded="false" />
+            <element signature="e#1529#1647#0" expanded="false" />
+            <element signature="e#1678#1893#0" expanded="false" />
+>>>>>>> parent of b08c8a9... Completed batting tables
           </folding>
         </state>
       </provider>
@@ -689,6 +747,7 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
             <element signature="e#376#1428#0" expanded="false" />
             <element signature="e#1470#1588#0" expanded="false" />
             <element signature="e#1619#1834#0" expanded="false" />
@@ -699,6 +758,11 @@
             <element signature="e#1664#1879#0" expanded="false" />
             <element signature="e#1909#2273#0" expanded="false" />
 >>>>>>> parent of 3b4f8bb... added pickle
+=======
+            <element signature="e#435#1487#0" expanded="false" />
+            <element signature="e#1529#1647#0" expanded="false" />
+            <element signature="e#1678#1893#0" expanded="false" />
+>>>>>>> parent of b08c8a9... Completed batting tables
           </folding>
         </state>
       </provider>
@@ -718,6 +782,7 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
             <element signature="e#376#1428#0" expanded="false" />
             <element signature="e#1470#1588#0" expanded="false" />
             <element signature="e#1619#1834#0" expanded="false" />
@@ -728,6 +793,11 @@
             <element signature="e#1664#1879#0" expanded="false" />
             <element signature="e#1909#2273#0" expanded="false" />
 >>>>>>> parent of 3b4f8bb... added pickle
+=======
+            <element signature="e#435#1487#0" expanded="false" />
+            <element signature="e#1529#1647#0" expanded="false" />
+            <element signature="e#1678#1893#0" expanded="false" />
+>>>>>>> parent of b08c8a9... Completed batting tables
           </folding>
         </state>
       </provider>
@@ -747,6 +817,7 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
             <element signature="e#376#1428#0" expanded="false" />
             <element signature="e#1470#1588#0" expanded="false" />
             <element signature="e#1619#1834#0" expanded="false" />
@@ -757,6 +828,11 @@
             <element signature="e#1664#1879#0" expanded="false" />
             <element signature="e#1909#2273#0" expanded="false" />
 >>>>>>> parent of 3b4f8bb... added pickle
+=======
+            <element signature="e#435#1487#0" expanded="false" />
+            <element signature="e#1529#1647#0" expanded="false" />
+            <element signature="e#1678#1893#0" expanded="false" />
+>>>>>>> parent of b08c8a9... Completed batting tables
           </folding>
         </state>
       </provider>
@@ -775,6 +851,7 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
             <element signature="e#376#1428#0" expanded="false" />
             <element signature="e#1470#1588#0" expanded="false" />
             <element signature="e#1619#1834#0" expanded="false" />
@@ -785,6 +862,11 @@
             <element signature="e#1664#1879#0" expanded="false" />
             <element signature="e#1909#2273#0" expanded="false" />
 >>>>>>> parent of 3b4f8bb... added pickle
+=======
+            <element signature="e#435#1487#0" expanded="false" />
+            <element signature="e#1529#1647#0" expanded="false" />
+            <element signature="e#1678#1893#0" expanded="false" />
+>>>>>>> parent of b08c8a9... Completed batting tables
           </folding>
         </state>
       </provider>
@@ -811,6 +893,7 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
             <element signature="e#376#1428#0" expanded="false" />
             <element signature="e#1470#1588#0" expanded="false" />
             <element signature="e#1619#1834#0" expanded="false" />
@@ -821,6 +904,11 @@
             <element signature="e#1664#1879#0" expanded="false" />
             <element signature="e#1909#2273#0" expanded="false" />
 >>>>>>> parent of 3b4f8bb... added pickle
+=======
+            <element signature="e#435#1487#0" expanded="false" />
+            <element signature="e#1529#1647#0" expanded="false" />
+            <element signature="e#1678#1893#0" expanded="false" />
+>>>>>>> parent of b08c8a9... Completed batting tables
           </folding>
         </state>
       </provider>
@@ -847,6 +935,7 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
             <element signature="e#376#1428#0" expanded="false" />
             <element signature="e#1470#1588#0" expanded="false" />
             <element signature="e#1619#1834#0" expanded="false" />
@@ -857,6 +946,11 @@
             <element signature="e#1664#1879#0" expanded="false" />
             <element signature="e#1909#2273#0" expanded="false" />
 >>>>>>> parent of 3b4f8bb... added pickle
+=======
+            <element signature="e#435#1487#0" expanded="false" />
+            <element signature="e#1529#1647#0" expanded="false" />
+            <element signature="e#1678#1893#0" expanded="false" />
+>>>>>>> parent of b08c8a9... Completed batting tables
           </folding>
         </state>
       </provider>
@@ -967,7 +1061,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mlb_db_queries.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="51">
           <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
           <folding />
         </state>
@@ -998,6 +1092,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Player_batting.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="374">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
@@ -1033,6 +1128,44 @@
             <element signature="e#1664#1879#0" expanded="false" />
             <element signature="e#1909#2273#0" expanded="false" />
 >>>>>>> parent of 3b4f8bb... added pickle
+=======
+        <state relative-caret-position="154">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#2570#2735#0" expanded="false" />
+            <element signature="e#2792#2960#0" expanded="false" />
+            <element signature="e#3020#3190#0" expanded="false" />
+            <element signature="e#3244#3409#0" expanded="false" />
+            <element signature="e#3466#3641#0" expanded="false" />
+            <element signature="e#3701#3872#0" expanded="false" />
+            <element signature="e#3932#4103#0" expanded="false" />
+            <element signature="e#4159#4326#0" expanded="false" />
+            <element signature="e#4385#4555#0" expanded="false" />
+            <element signature="e#4667#6402#0" expanded="false" />
+            <element signature="e#6452#7866#0" expanded="false" />
+            <element signature="e#7919#9489#0" expanded="false" />
+            <element signature="e#9544#11286#0" expanded="false" />
+            <element signature="e#11336#12558#0" expanded="false" />
+            <element signature="e#12618#13779#0" expanded="false" />
+            <element signature="e#13835#15856#0" expanded="false" />
+            <element signature="e#15912#18273#0" expanded="false" />
+            <element signature="e#18325#20260#0" expanded="false" />
+            <element signature="e#20315#21855#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mlb_data_webscraper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#435#1487#0" expanded="false" />
+            <element signature="e#1529#1647#0" expanded="false" />
+            <element signature="e#1678#1893#0" expanded="false" />
+>>>>>>> parent of b08c8a9... Completed batting tables
           </folding>
         </state>
       </provider>
